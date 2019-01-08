@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Favorites</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let song of favoriteSongs">
+    <img [src]="song.image">
+    <ion-card-content>
+      <ion-card-title>{{song.name}}</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
